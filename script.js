@@ -83,7 +83,7 @@ function playCongratulations() {
 
 
     countdown.textContent =
-        "Enjoy the Congratulations song!";
+        "Enjoy the the Trip we are planning something for you soon!";
 
 
     thankYouImage.style.display = "block";

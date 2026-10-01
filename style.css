@@ -1,0 +1,126 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f2f2;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+
+.container {
+
+    background-color: rgb(78, 183, 199);
+
+    width: 400px;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+h1 {
+
+    color: #1d3557;
+
+    margin-bottom: 10px;
+}
+
+
+h2 {
+
+    margin-bottom: 10px;
+}
+
+
+label {
+
+    display: block;
+
+    text-align: left;
+
+    margin-top: 25px;
+
+    margin-bottom: 10px;
+}
+
+
+input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+}
+
+
+button {
+
+    margin-top: 20px;
+
+    padding: 12px 30px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    border: none;
+
+    border-radius: 5px;
+}
+
+
+#message {
+
+    margin-top: 25px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+#countdown {
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+#thankYouImage {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    display: none;
+}
+
+
+#music {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    display: none;
+}

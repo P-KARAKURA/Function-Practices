@@ -47,10 +47,10 @@ function signIn() {
 
 function startCountdown() {
 
-    let time = 10;
+    let time = 2;
 
     countdown.textContent =
-        "YOUR GIFT ON THE WAY IN " + time + " seconds";
+        "YOUR GIFT ON THE WAY IN " + time + " steps only!";
 
 
     const timer = setInterval(function () {
@@ -58,10 +58,12 @@ function startCountdown() {
         time--;
 
         countdown.textContent =
-            "YOUR GIFT ON THE WAY IN " + time + " seconds";
+            "YOUR GIFT ON THE WAY IN " + time + " steps!";
 
 
         if (time === 0) {
+
+            console.log("Countdown finished!");
 
             clearInterval(timer);
 
@@ -81,10 +83,24 @@ function playCongratulations() {
 
     music.play();
 
+    setTimeout(function () {
+        music.pause();
+        music.currentTime = 0;
+    }, 15000);
+
+     stopButton.style.display = "block";
 
     countdown.textContent =
-        "Enjoy the the Trip we are planning something for you soon!";
-
+        "Enjoy the Trip! We are planning something for you soon!";
 
     thankYouImage.style.display = "block";
 }
+
+stopButton.addEventListener("click", function () {
+
+    music.pause();
+    music.currentTime = 0;
+
+    stopButton.style.display = "none";
+
+});
